@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MediCare Pharmacy</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">
+      <i class="fa-solid fa-hospital logo-icon"></i>
+      <div class="logo-text">
+        <span class="brand-name">MediCare</span>
+        <span class="brand-sub">Pharmacy</span>
+      </div>
+    </div>
+
+    <nav class="nav-links">
+      <a href="#">Home</a>
+      <a href="#" class="active">Medicines</a>
+      <a href="#">Vitamins</a>
+      <a href="#">Skin Care</a>
+      <a href="#">Personal Care</a>
+      <a href="#">Offers</a>
+      <a href="#">About Us</a>
+      <a href="#">Contact</a>
+    </nav>
+
+    <div class="nav-actions">
+      <div class="search-box">
+        <input type="text" placeholder="Search products...">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
+      <i class="fa-solid fa-globe icon-btn"></i>
+      <i class="fa-solid fa-bag-shopping icon-btn"></i>
+    </div>
+  </header>
+
+  <!-- Hero Banner -->
+  <section class="medicines-hero">
+    <div class="hero-left">
+      <div class="badge-verified">
+        <i class="fa-regular fa-circle-check"></i> Verified Pharmaceuticals
+      </div>
+      <h1>Trusted Pharmacy Care</h1>
+      <p class="hero-desc">Explore our comprehensive range of clinically approved medications, meticulously sourced to support your health journey.</p>
+      
+      <div class="notice-box">
+        <i class="fa-solid fa-circle-info notice-icon"></i>
+        <p><strong>Important Notice:</strong> Always consult a healthcare professional before using medication. Read product labels and follow directions carefully. If symptoms persist, seek medical advice immediately.</p>
+      </div>
+    </div>
+
+    <div class="hero-right">
+      <div class="hero-img-box">
+        <img src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=500&auto=format&fit=crop&q=80" alt="Pharmacy Care">
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Catalog Section -->
+  <section class="catalog-container">
+    
+    <!-- Left Sidebar (Filters) -->
+    <aside class="sidebar-filters">
+      <div class="filter-header">
+        <h3>Filters</h3>
+        <a href="#" class="clear-btn">Clear all</a>
+      </div>
+
+      <div class="filter-group">
+        <h4>Availability</h4>
+        <label class="checkbox-container">
+          <input type="checkbox" checked> Over The Counter (OTC)
+        </label>
+        <label class="checkbox-container">
+          <input type="checkbox"> Prescription Only <i class="fa-regular fa-file-lines"></i>
+        </label>
+      </div>
+
+      <div class="filter-group">
+        <h4>Category</h4>
+        <label class="checkbox-container">
+          <input type="checkbox" checked> Pain Relief
+        </label>
+        <label class="checkbox-container">
+          <input type="checkbox"> Cold & Flu
+        </label>
+        <label class="checkbox-container">
+          <input type="checkbox" checked> Allergy & Antihistamines
+        </label>
+        <label class="checkbox-container">
+          <input type="checkbox"> Digestive Health
+        </label>
+        <label class="checkbox-container">
+          <input type="checkbox"> First Aid
+        </label>
+      </div>
+
+      <div class="filter-group brand-group">
+        <h4>Brand <i class="fa-solid fa-chevron-down"></i></h4>
+      </div>
+    </aside>
+
+    <!-- Right Area (Products Grid) -->
+    <main class="products-area">
+      <div class="products-top-bar">
+        <p>Showing <strong>12</strong> of 145 products</p>
+        <div class="sort-by">
+          <label>Sort by:</label>
+          <select>
+            <option>Recommended</option>
+            <option>Price: Low to High</option>
+            <option>Price: High to Low</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Grid of Products -->
+      <div class="products-grid">
+        
+        <!-- Card 1: Ibuprofen -->
+        <div class="product-card">
+          <span class="badge otc">OTC</span>
+          <div class="img-box">
+            <img src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=300&auto=format&fit=crop&q=80" alt="Ibuprofen">
+          </div>
+          <div class="card-body">
+            <span class="category-name">Pain Relief</span>
+            <h3>Ibuprofen Advanced Relief 400mg</h3>
+            <p>Fast acting pain relief for headaches, dental pain, an...</p>
+            <div class="card-footer">
+              <span class="price">$8.99</span>
+              <button class="cart-btn"><i class="fa-solid fa-cart-shopping"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2: Loratadine -->
+        <div class="product-card">
+          <span class="badge otc">OTC</span>
+          <div class="img-box">
+            <img src="https://images.unsplash.com/photo-1550572017-edd951b55104?w=300&auto=format&fit=crop&q=80" alt="Loratadine">
+          </div>
+          <div class="card-body">
+            <span class="category-name">Allergy</span>
+            <h3>Loratadine Non-Drowsy 10mg</h3>
+            <p>24-hour allergy relief from pollen, dust, and pet dander...</p>
+            <div class="card-footer">
+              <span class="price">$12.50</span>
+              <button class="cart-btn"><i class="fa-solid fa-cart-shopping"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3: Amoxicillin -->
+        <div class="product-card">
+          <span class="badge rx">PRESCRIPTION</span>
+          <i class="fa-regular fa-file-lines rx-icon"></i>
+          <div class="img-box">
+            <img src="https://images.unsplash.com/photo-1584017911766-d451b3d0e843?w=300&auto=format&fit=crop&q=80" alt="Amoxicillin">
+          </div>
+          <div class="card-body">
+            <span class="category-name">Antibiotic</span>
+            <h3>Amoxicillin Capsules 500mg</h3>
+            <p>Broad-spectrum penicillin antibiotic. Requires valid...</p>
+            <div class="card-footer">
+              <span class="price">$15.00</span>
+              <button class="upload-btn">Upload Script</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4: Cold & Flu -->
+        <div class="product-card">
+          <span class="badge otc">OTC</span>
+          <div class="img-box">
+            <img src="https://images.unsplash.com/photo-1607613009820-a29f7bb81c04?w=300&auto=format&fit=crop&q=80" alt="Cold & Flu">
+          </div>
+          <div class="card-body">
+            <span class="category-name">Cold & Flu</span>
+            <h3>Multi-Symptom Cold & Flu Relief</h3>
+            <p>Daytime non-drowsy formula for cough,...</p>
+            <div class="card-footer">
+              <span class="price">$10.25</span>
+              <button class="cart-btn"><i class="fa-solid fa-cart-shopping"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 5: Hydrocortisone Cream -->
+        <div class="product-card">
+          <span class="badge otc">OTC</span>
+          <span class="badge sale">SALE</span>
+          <div class="img-box">
+            <img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?w=300&auto=format&fit=crop&q=80" alt="Cream">
+          </div>
+          <div class="card-body">
+            <span class="category-name">First Aid</span>
+            <h3>Hydrocortisone Cream 1%</h3>
+            <p>Maximum strength itch relief for eczema, psoriasis, and...</p>
+            <div class="card-footer">
+              <div class="price-box">
+                <span class="old-price">$8.50</span>
+                <span class="price">$6.99</span>
+              </div>
+              <button class="cart-btn"><i class="fa-solid fa-cart-shopping"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 6: Antacid Liquid -->
+        <div class="product-card">
+          <span class="badge otc">OTC</span>
+          <div class="img-box">
+            <img src="https://images.unsplash.com/photo-1576602976047-174e57a47881?w=300&auto=format&fit=crop&q=80" alt="Syrup">
+          </div>
+          <div class="card-body">
+            <span class="category-name">Digestive Health</span>
+            <h3>Maximum Strength Antacid Liquid</h3>
+            <p>Fast acting relief for heartburn, acid indigestion,...</p>
+            <div class="card-footer">
+              <span class="price">$11.20</span>
+              <button class="cart-btn"><i class="fa-solid fa-cart-shopping"></i></button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Pagination -->
+      <div class="pagination">
+        <button class="page-btn"><i class="fa-solid fa-chevron-left"></i></button>
+        <button class="page-btn active">1</button>
+        <button class="page-btn">2</button>
+        <button class="page-btn">3</button>
+        <span class="dots">...</span>
+        <button class="page-btn">12</button>
+        <button class="page-btn"><i class="fa-solid fa-chevron-right"></i></button>
+      </div>
+    </main>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-brand">
+        <div class="logo">
+          <i class="fa-solid fa-hospital logo-icon"></i>
+          <span class="brand-name">MediCare Pharmacy</span>
+        </div>
+        <p>Providing trusted healthcare solutions and professional pharmacy services since 2024.</p>
+      </div>
+
+      <div class="footer-links">
+        <h4>CATEGORIES</h4>
+        <ul>
+          <li><a href="#">Medicines</a></li>
+          <li><a href="#">Vitamins</a></li>
+          <li><a href="#">Skin Care</a></li>
+          <li><a href="#">Personal Care</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links">
+        <h4>SUPPORT</h4>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-newsletter">
+        <h4>STAY HEALTHY</h4>
+        <p>Subscribe to our newsletter for health tips and exclusive offers.</p>
+        <div class="subscribe-box">
+          <input type="email" placeholder="Your email">
+          <button>Subscribe</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2024 MediCare Pharmacy. All rights reserved.</p>
+      <div class="footer-icons">
+        <i class="fa-solid fa-lock"></i>
+        <i class="fa-solid fa-shield-halved"></i>
+      </div>
+    </div>
+  </footer>
+
+</body>
+    </html>
